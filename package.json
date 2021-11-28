@@ -1,0 +1,32 @@
+{
+  "name": "aca-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "migrate": "sequelize db:migrate"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.9",
+    "body-parser": "latest",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "handlebars": "^4.7.7",
+    "html-pdf-node": "^1.0.7",
+    "pg": "^8.7.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "sequelize-cli": "^6.3.0",
+    "socket.io": "^4.4.0"
+  },
+  "author": "Lena",
+  "license": "ISC"
+}
