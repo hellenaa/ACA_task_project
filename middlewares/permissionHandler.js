@@ -14,5 +14,4 @@ class PermissionHandler {
   }
 }
 
-const PermissionHandlerInstance = new PermissionHandler();
-module.exports = PermissionHandlerInstance;
+module.exports = new PermissionHandler();

@@ -8,6 +8,8 @@ class Utils {
   constructor() {
     this.crypto = crypto;
     this.fsPromise = fsPromise;
+    this.generateToken = this.generateToken.bind(this);
+    this.deleteFiles = this.deleteFiles.bind(this);
   }
 
   generateToken() {

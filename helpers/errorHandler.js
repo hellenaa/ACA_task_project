@@ -13,5 +13,4 @@ class ErrorHandler {
   }
 }
 
-const ErrorHandlerInstance = new ErrorHandler();
-module.exports = ErrorHandlerInstance;
+module.exports = new ErrorHandler();

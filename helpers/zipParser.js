@@ -7,12 +7,13 @@ const AdmZip = require('adm-zip');
 class ZipParser {
   constructor() {
     this.path = path;
-    this.admZip = AdmZip;
+    this.AdmZip = AdmZip;
     this.fsPromise = fsPromise;
+    this.parseZip = this.parseZip.bind(this);
   }
 
   async parseZip(usersPdfPath, zipName) {
-    const zip = new this.admZip();
+    const zip = new this.AdmZip();
 
     for (const userPdfPath of usersPdfPath) {
       zip.addLocalFile(userPdfPath);
@@ -26,5 +27,4 @@ class ZipParser {
   }
 }
 
-const ZipParserInstance = new ZipParser();
-module.exports = ZipParserInstance;
+module.exports = new ZipParser();

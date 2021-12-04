@@ -10,5 +10,4 @@ class EventHandler {
   }
 }
 
-const EventHandlerInstance = new EventHandler();
-module.exports = EventHandlerInstance;
+module.exports = new EventHandler();

@@ -17,6 +17,8 @@ class FileController {
     this.fsPromise = fsPromise;
     this.htmlParser = HtmlParser;
     this.htmlToPdfParser = HtmlToPdfParser;
+    this.createCVs = this.createCVs.bind(this);
+    this.getCVs = this.getCVs.bind(this);
   }
 
   async createCVs(req, res, next) {
@@ -59,5 +61,4 @@ class FileController {
   }
 }
 
-const FileControllerInstance = new FileController();
-module.exports = FileControllerInstance;
+module.exports = new FileController();

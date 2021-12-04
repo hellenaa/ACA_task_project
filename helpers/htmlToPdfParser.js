@@ -11,6 +11,7 @@ class HtmlToPdfParser {
     this.utils = Utils;
     this.htmlToPdf = htmlToPdf;
     this.fsPromise = fsPromise;
+    this.parsePdf = this.parsePdf.bind(this);
   }
 
   async parsePdf(usersHtml) {
@@ -35,5 +36,4 @@ class HtmlToPdfParser {
   }
 }
 
-const HtmlToPdfParserInstance = new HtmlToPdfParser();
-module.exports = HtmlToPdfParserInstance;
+module.exports = new HtmlToPdfParser();
